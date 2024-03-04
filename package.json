@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build && npm run server",
     "start": "next start",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "build-and-serve": "concurrently \"npm run build\" \"npm run server\""
   },
   "dependencies": {
     "@clerk/nextjs": "^4.27.1",
