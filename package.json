@@ -37,6 +37,8 @@
     "generate-unique-id": "^2.0.3",
     "html2canvas": "^1.4.1",
     "http": "^0.0.1-security",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.1",
     "micro": "^10.0.1",
     "micro-cors": "^0.1.1",
     "next": "14.0.2",
