@@ -1,11 +1,10 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "proxy": "http://localhost:3001",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && npm run server",
     "start": "next start",
     "server": "nodemon server.js"
   },
@@ -67,6 +66,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "concurrently": "^8.2.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "nodemon": "^3.1.0",
     "postcss": "^8",
