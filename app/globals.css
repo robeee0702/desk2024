@@ -2,26 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+input[type="text"]:checked + label {
+  @apply bg-blue;
+}
+
+@layer base {
+  
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 243,243,243;
   --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
+.fc-event {
+  height:48px !important;
+  padding: 3px !important;
+}
+.fc-button {
+  background-color: #3788D8 !important;
+  border: none !important;
+}
+.fc-button-group {
+  border: none !important;
+}
+
+.apexcharts-svg {
+  width: 100% !important;
+  height: auto !important;
+}
+.apexcharts-legend-text {
+  font-weight: bold;
+}
+
